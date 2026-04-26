@@ -1,0 +1,103 @@
+ion-toolbar {
+  --background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  --border-style: none; 
+  height: 100px; 
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+ion-header {
+  background-color: white; 
+}
+
+ion-title {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 26px;      
+  font-weight: 900;     
+  letter-spacing: 1.5px; 
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.botao-custom {
+  /* Remove o fundo padrão para aplicar o gradiente */
+  --background: none; 
+  
+  /* Criando um gradiente que combina com tecnologia */
+  background: linear-gradient(135deg, #004d7a 0%, #008793 100%);
+  
+  /* Estilos de texto e forma */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 90px;
+  border-radius: 50px; /* Mantém ele bem arredondado */
+  
+  /* Sombra para dar o efeito de elevação */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+/* Efeito de clique (feedback visual) */
+.botao-custom:active {
+  transform: scale(0.95);
+}
+
+.botao-custom::part(native) {
+  /* Garante que o texto e ícone fiquem brancos */
+  color: white;
+  padding: 10px;
+}
+
+ion-card-content p {
+  color: #444; /* Um cinza escuro para facilitar a leitura */
+  text-align: justify; /* Deixa o bloco de texto alinhado nas duas pontas */
+}
+
+.card-home {
+  --background: #f4f9ff;
+  border-radius: 20px;
+  
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(135deg, #004d7a, #008793);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+  
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  animation: fadeInCard 0.8s ease-out;
+}
+
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ion-card-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #004d7a; /* Azul escuro da sua marca */
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+ion-card-subtitle {
+  color: #008793; /* Verde água para contraste */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

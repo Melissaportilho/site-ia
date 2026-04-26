@@ -1,0 +1,71 @@
+ion-toolbar {
+  --background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  --border-style: none; 
+  height: 100px; 
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+ion-header {
+  background-color: white; 
+}
+
+ion-title {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 26px;      
+  font-weight: 900;     
+  letter-spacing: 1.5px; 
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pagina-desafios .card-desafio {
+  margin: 0;
+  height: 100%;
+  border-left: 6px solid; /* A barra lateral colorida */
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+
+.card-desafio.etica { border-left: 6px solid #ffc107 !important; }
+.card-desafio.privacidade { border-left: 6px solid #f44336 !important; }
+.card-desafio.dependencia { border-left: 6px solid #9c27b0 !important; }
+.card-desafio.social { border-left: 6px solid #607d8b !important; }
+.card-desafio.responsavel { border-left: 6px solid #008793 !important; }
+.badge-desafio {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.pagina-desafios ion-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.pagina-desafios ion-card-content {
+  color: #555;
+  line-height: 1.5;
+}
+
+.card-desafio.responsavel {
+  text-align: center;
+}
+
+.card-desafio.responsavel .badge-desafio {
+  margin: 0 auto 10px auto;
+}

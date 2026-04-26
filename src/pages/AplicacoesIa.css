@@ -1,0 +1,91 @@
+/* 1. CONTAINER DA PÁGINA (Para evitar que afete outras telas) */
+.pagina-aplicacoes {
+  background-color: #ffffff;
+}
+
+/* 2. GRID E ALINHAMENTO */
+.pagina-aplicacoes .grid-aplicacoes {
+  --ion-grid-column-padding: 12px;
+  max-width: 1100px; /* Mantém os 3 cards com tamanho elegante no PC */
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/* 3. O CARD PADRONIZADO */
+.pagina-aplicacoes .card-aplicacao {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f4f9ff;
+  
+  /* Efeito de borda gradiente que você criou */
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(135deg, #004d7a, #008793);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  /* Sombra e Transição */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease;
+}
+
+/* 4. IMAGEM */
+.pagina-aplicacoes .card-aplicacao img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* 5. TEXTOS DO CARD */
+.pagina-aplicacoes ion-card-title {
+  display: flex;
+  align-items: center;
+  min-height: 3em; /* Garante alinhamento mesmo com títulos longos */
+  font-size: 1.2rem !important;
+  font-weight: 800;
+  color: #004d7a;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.pagina-aplicacoes ion-card-subtitle {
+  color: #008793;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+}
+
+.pagina-aplicacoes ion-card-content p {
+  color: #444;
+  text-align: left; /* Alinhamento à esquerda costuma ler melhor em cards estreitos */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 6. EFEITO HOVER EXCLUSIVO */
+.pagina-aplicacoes .card-aplicacao:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 77, 122, 0.2);
+  border-color: #004d7a; /* Realça a borda no hover */
+}
+
+.header-definicao {
+  text-align: center;
+  padding: 20px 10px;
+  background: #f4f9ff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.header-definicao h1 {
+  color: #004d7a;
+  font-weight: 800;
+}
