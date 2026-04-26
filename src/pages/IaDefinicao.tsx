@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonIcon, IonLabel, IonButton, IonGrid, IonCol, IonRow,   } from '@ionic/react';
-import './iaDefinicao.css';
+import './IaDefinicao.css';
 import { languageOutline, openOutline } from 'ionicons/icons';
 import { bookOutline } from 'ionicons/icons';
 import { desktopOutline} from 'ionicons/icons';
